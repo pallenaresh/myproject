@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="red">
+<table border="5">
+    <tr>
+        <th>usermob</th>
+        <th>Fname</th>
+        <th>Lname</th>
+        <th>pwd</th>
+        <th>Actions</th>
+    </tr>
+    {% for k in m %}
+        <tr>
+        <td>{{ k.usermob }}</td>
+        <td>{{ k.Fname }}</td>
+        <td>{{ k.Lname }}</td>
+        <td>{{ k.pwd }}</td>
+        <td>Delete</td>
+        </tr>
+        {% endfor %}
+</table>
+</body>
+</html>
